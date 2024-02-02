@@ -2,7 +2,7 @@
 maxplayers=10
 
 #载入世界并自动启动服务器,需要写绝对地址。注意：服务器启动时会按此参数寻找文件，如果找不到则会按参数 worldname 自动创建世界
-world=/root/world/world_expert.wld
+world=/root/world/expert.wld
 
 #设置端口号
 port=7777
@@ -20,7 +20,7 @@ worldpath=/root/world/
 autocreate=3
 
 #找不到世界时，自动创建的世界名称。不需要写.wld后缀
-worldname=world_expert
+worldname=expert
 
 #banlist的位置。默认在工作目录中的“banlist.txt”。
 banlist=banlist.txt

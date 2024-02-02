@@ -15,7 +15,7 @@ RUN ls
 
 RUN chmod -R 777 ./server
 
-RUN BACKGROUND ./server/TerrariaServer -config ./server/serverconfig.txt
+RUN BACKGROUND ./server/TerrariaServer -config serverconfig.txt
 
 
 # Expose the webserver in the staging server as a secure link.
