@@ -3,15 +3,20 @@ FROM vm/ubuntu:22.04
 # To note: Layerfiles create entire VMs, *not* containers!
 
 # Install
-RUN apt update && apt install screen unzip
+RUN apt update && apt install screen
 
 # You could also install & start a database:
 # RUN apt-get update && apt-get install postgresql
 
 # This line copies the repository to /root in the runner
+RUN pwd
+COPY . .
 RUN ls
-COPY ./server .
-RUN ls
+
+RUN chmod -R 777 ./server
+
+RUN ./server/TerrariaServer.bin.x86_64 -config ./server/serverconfig.txt
+
 
 # Expose the webserver in the staging server as a secure link.
 # Whenever someone clicks the link, we'll load this staging server and forward

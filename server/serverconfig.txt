@@ -2,7 +2,7 @@
 maxplayers=10
 
 #载入世界并自动启动服务器,需要写绝对地址。注意：服务器启动时会按此参数寻找文件，如果找不到则会按参数 worldname 自动创建世界
-world=/game/terraria-server/world/world_expert.wld
+world=/root/world/world_expert.wld
 
 #设置端口号
 port=7777
@@ -14,7 +14,7 @@ password=1234
 motd=泡杯护肝茶吧
 
 #设置存储世界文件的文件夹
-worldpath=/game/terraria-server/world/
+worldpath=/root/world/
 
 #如果找不到，则创建一个新世界。 世界大小由下式指定：1（小型）、2（中型）和3（大型）。
 autocreate=3
